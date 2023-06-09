@@ -101,11 +101,6 @@ p {
     color: hsl(303, 10%, 53%);
 }
 
-.rating div
-,.rating p {
-    margin-inline: 1rem;
-}
-
 .name,
 .review > p {
     color: white
@@ -149,6 +144,11 @@ p {
         height: 350px !important;
     }
 
+    .rating div
+    ,.rating p {
+        margin-inline: 1rem;
+    }
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -170,6 +170,19 @@ p {
     .reviews {
         flex-direction: column;
         gap: 1rem;
+    }
+    .ratings {
+        width: 100%;
+    }
+    .rating {
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .rating div
+    ,.rating p {
+        margin-block: 0.5rem;
     }
 }
 
